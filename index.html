@@ -108,18 +108,18 @@
 				<div class="container">
 				<div class="row my-4">
 						<div class="col mx-5 my-4"> <img id="c-style-img-1" class="centered" crossorigin="anonymous" src="images/stripes.jpg" height=256></img> <br>
-						<label for="c-style-img-1-size">Style A Size</label>
+						<label for="c-style-img-1-size">A风格</label>
 						<i class="far fa-question-circle" data-toggle="tooltip" data-placement="top" 
-            title="Changing the size of a style image usually affects the texture "seen" by the network."></i>
+            title="更改样式图像的大小通常会影响网络“看到”的纹理。"></i>
 						<input id="c-style-1-square" type="checkbox" style="vertical-align: middle; float: right;"
             data-toggle="tooltip" data-placement="top" 
-            title="Force image to square">
+            title="设置图片正方形">
 						<input type="range" min="100" max="400" value="256" class="custom-range centered" id="c-style-img-1-size">
 						<br>
 						<select id="c-style-1-select" class="centered custom-select">
-								<option value="" disabled>Select a style</option>
-								<option value="file">Select from file</option>
-								<option value="random">Random image from wikiart.org</option>
+								<option value="" disabled>选择一个风格</option>
+								<option value="file">从文件中选择</option>
+								<option value="random">随机生成</option>
 								<option value="udnie">udnie</option>
 								<option value="stripes" selected="selected">stripes</option>
 								<option value="bricks">bricks</option>
@@ -132,18 +132,18 @@
 							</select>
 					</div>
 						<div class="col mx-5 my-4"> <img id="c-style-img-2" class="centered" crossorigin="anonymous" src="images/bricks.jpg" height=256></img> <br>
-						<label for="c-style-img-2-size">Style B Size</label>
+						<label for="c-style-img-2-size">B风格</label>
 						<i class="far fa-question-circle" data-toggle="tooltip" data-placement="top" 
-            title="Changing the size of a style image usually affects the texture "seen" by the network."></i>
+            title="更改样式图像的大小通常会影响网络“看到”的纹理。"></i>
 						<input id="c-style-2-square" type="checkbox" style="vertical-align: middle; float: right;"
             data-toggle="tooltip" data-placement="top" 
-            title="Force image to square">
+            title="设置图片正方形">
 						<input type="range" min="100" max="400" value="256" class="custom-range centered" id="c-style-img-2-size">
 						<br>
 						<select id="c-style-2-select" class="centered custom-select">
-								<option value="" disabled>Select a style</option>
-								<option value="file">Select from file</option>
-								<option value="random">Random image from wikiart.org</option>
+								<option value="" disabled>选择一个风格</option>
+								<option value="file">从文件中选择</option>
+								<option value="random">随机生成</option>
 								<option value="udnie">udnie</option>
 								<option value="stripes">stripes</option>
 								<option value="bricks" selected="selected">bricks</option>
@@ -158,15 +158,15 @@
 					</div>
 				<div class="row my-4">
 						<div class="col-md-6 offset-md-3"> <img id="c-content-img" class="centered" src="images/statue_of_liberty.jpg" height=256></img> <br>
-						<label for="c-content-img-size">Content image size</label>
+						<label for="c-content-img-size">内容图片大小</label>
 						<i class="far fa-question-circle" data-toggle="tooltip" data-placement="top" 
-            title="A bigger content image results in a more detailed output, but increases the processing time significantly."></i>
+            title="图片大小越大，输出更详细，但处理时间延长。"></i>
 						<input type="range" min="256" max="400" value="256" class="custom-range centered" id="c-content-img-size">
 						<br>
 						<select id="c-content-select" class="centered custom-select">
-								<option value="" disabled>Select content</option>
-								<option value="pic">Take a picture</option>
-								<option value="file">Select from file</option>
+								<option value="" disabled>母图</option>
+								<option value="pic">拍照</option>
+								<option value="file">从文件中选择</option>
 								<option value="stata">stata</option>
 								<option value="diana">diana</option>
 								<option value="golden_gate">golden_gate</option>
@@ -180,15 +180,15 @@
 						<div class="col-md-6 offset-md-3">
 						<canvas id="c-stylized" class="centered"></canvas>
 						<br>
-						<label for="c-stylized-img-ratio">Stylization Ratio</label>
+						<label for="c-stylized-img-ratio">程式化比率</label>
 						<i class="far fa-question-circle" data-toggle="tooltip" data-placement="top" 
-            title="This parameter affects the strength of the two styles relative to each other. This is done via interpolation between the style vectors of the two style images."></i>
+            title="此参数会影响两个样式相对于彼此的强度。 这是通过两个风格图像的样式矢量之间的插值来完成的。"></i>
 						<input type="range" min="0" max="100" value="50" class="custom-range centered" id="c-stylized-img-ratio">
 					</div>
 					</div>
 				<div class="row my-4">
 						<div class="col-md-5 offset-md-3">
-						<button disabled id="combine-button" type="button" class="btn btn-primary btn-block">Loading stylization model. Please wait..</button>
+						<button disabled id="combine-button" type="button" class="btn btn-primary btn-block">加载程式化模型。 请耐心等待..</button>
 					</div>
 						<div class="col-md-1">
 						<button type="button" id="c-randomize" class="btn btn-light btn-block"> <i class="fas fa-random" data-toggle="tooltip" data-placement="top" 
@@ -219,15 +219,15 @@
 		<div class="modal-dialog modal-lg" role="document">
 				<div class="modal-content">
 				<div class="modal-header">
-						<h5 class="modal-title" id="exampleModalLabel">Take a snapshot!</h5>
+						<h5 class="modal-title" id="exampleModalLabel">拍照</h5>
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
 					</div>
 				<div class="modal-body">
 						<video id="webcam-video" class="centered" width="500" height="375"></video>
 					</div>
 				<div class="modal-footer">
-						<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-						<button type="button" class="btn btn-primary" id="snap-button">Snap!</button>
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+						<button type="button" class="btn btn-primary" id="snap-button">拍摄</button>
 					</div>
 			</div>
 			</div>
