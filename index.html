@@ -30,7 +30,6 @@
 
     <body>
 <input type="file" id="file-select" style="display: none" accept="image/x-png,image/gif,image/jpeg"/>
-
 <div class="">
 		<ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
 		<li class="nav-item"> <a class="nav-link active" id="stylize-tab" data-toggle="tab" href="#stylize" role="tab" aria-controls="stylize" aria-selected="true">一种风格化图像</a> </li>
@@ -50,12 +49,12 @@
 								<option value="" disabled>选择一张图片</option>
 								<option value="pic">拍一张照片</option>
 								<option value="file">从文件中选择</option>
-								<option value="stata">stata</option>
-								<option value="diana">diana</option>
-								<option value="golden_gate">golden_gate</option>
-								<option value="beach">beach</option>
-								<option value="chicago" selected="selected">chicago</option>
-								<option value="statue_of_liberty">statue_of_liberty</option>
+								<option value="stata">现代建筑</option>
+								<option value="diana">人像</option>
+								<option value="golden_gate">长江大桥</option>
+								<option value="beach">海滩</option>
+								<option value="chicago" selected="selected">故宫</option>
+								<option value="statue_of_liberty">牛头</option>
 							</select>
 					</div>
 						<div class="col mx-5 my-4"> <img id="style-img" class="centered" crossorigin="anonymous" src="images/seaport.jpg" height=256></img> <br>
@@ -70,16 +69,16 @@
 						<select id="style-select" class="centered custom-select">
 								<option value="" disabled>选择一种风格</option>
 								<option value="file">从文件中选择</option>
-								<option value="random">Random image from wikiart.org</option>
-								<option value="udnie">udnie</option>
-								<option value="stripes">stripes</option>
-								<option value="bricks">bricks</option>
-								<option value="clouds">clouds</option>
-								<option value="towers">towers</option>
-								<option value="sketch">sketch</option>
-								<option value="seaport" selected="selected">seaport</option>
-								<option value="red_circles">red_circles</option>
-								<option value="zigzag">zigzag</option>
+								<option value="random">随机生成</option>
+								<option value="udnie">抽象</option>
+								<option value="stripes">线条1</option>
+								<option value="bricks">砖块</option>
+								<option value="clouds">云</option>
+								<option value="towers">塔</option>
+								<option value="sketch">草图</option>
+								<option value="seaport">海港</option>
+								<option value="red_circles" selected="selected">梵高星空</option>
+								<option value="zigzag">曲线</option>
 							</select>
 					</div>
 					</div>
@@ -120,15 +119,15 @@
 								<option value="" disabled>选择一个风格</option>
 								<option value="file">从文件中选择</option>
 								<option value="random">随机生成</option>
-								<option value="udnie">udnie</option>
-								<option value="stripes" selected="selected">stripes</option>
-								<option value="bricks">bricks</option>
-								<option value="clouds">clouds</option>
-								<option value="towers">towers</option>
-								<option value="sketch">sketch</option>
-								<option value="seaport">seaport</option>
-								<option value="red_circles">red_circles</option>
-								<option value="zigzag">zigzag</option>
+								<option value="udnie" selected="selected">抽象</option>
+								<option value="stripes">线条1</option>
+								<option value="bricks">砖块</option>
+								<option value="clouds">云</option>
+								<option value="towers">塔</option>
+								<option value="sketch">草图</option>
+								<option value="seaport">海港</option>
+								<option value="red_circles">梵高星空</option>
+								<option value="zigzag">曲线</option>
 							</select>
 					</div>
 						<div class="col mx-5 my-4"> <img id="c-style-img-2" class="centered" crossorigin="anonymous" src="images/bricks.jpg" height=256></img> <br>
@@ -144,15 +143,15 @@
 								<option value="" disabled>选择一个风格</option>
 								<option value="file">从文件中选择</option>
 								<option value="random">随机生成</option>
-								<option value="udnie">udnie</option>
-								<option value="stripes">stripes</option>
-								<option value="bricks" selected="selected">bricks</option>
-								<option value="clouds">clouds</option>
-								<option value="towers">towers</option>
-								<option value="sketch">sketch</option>
-								<option value="seaport">seaport</option>
-								<option value="red_circles">red_circles</option>
-								<option value="zigzag">zigzag</option>
+								<option value="udnie">抽象</option>
+								<option value="stripes">线条1</option>
+								<option value="bricks">砖块</option>
+								<option value="clouds">云</option>
+								<option value="towers" selected="selected">塔</option>
+								<option value="sketch">草图</option>
+								<option value="seaport">海港</option>
+								<option value="red_circles">梵高星空</option>
+								<option value="zigzag">曲线</option>
 							</select>
 					</div>
 					</div>
@@ -167,12 +166,12 @@
 								<option value="" disabled>母图</option>
 								<option value="pic">拍照</option>
 								<option value="file">从文件中选择</option>
-								<option value="stata">stata</option>
-								<option value="diana">diana</option>
-								<option value="golden_gate">golden_gate</option>
-								<option value="beach">beach</option>
-								<option value="chicago">chicago</option>
-								<option value="statue_of_liberty" selected="selected">statue_of_liberty</option>
+								<option value="stata">现代建筑</option>
+								<option value="diana">人像</option>
+								<option value="golden_gate">长江大桥</option>
+								<option value="beach">海滩</option>
+								<option value="chicago">故宫</option>
+								<option value="statue_of_liberty" selected="selected">牛头</option>
 							</select>
 					</div>
 					</div>
@@ -180,7 +179,7 @@
 						<div class="col-md-6 offset-md-3">
 						<canvas id="c-stylized" class="centered"></canvas>
 						<br>
-						<label for="c-stylized-img-ratio">程式化比率</label>
+						<label for="c-stylized-img-ratio">风格渲染强度</label>
 						<i class="far fa-question-circle" data-toggle="tooltip" data-placement="top" 
             title="此参数会影响两个样式相对于彼此的强度。 这是通过两个风格图像的样式矢量之间的插值来完成的。"></i>
 						<input type="range" min="0" max="100" value="50" class="custom-range centered" id="c-stylized-img-ratio">
@@ -192,7 +191,7 @@
 					</div>
 						<div class="col-md-1">
 						<button type="button" id="c-randomize" class="btn btn-light btn-block"> <i class="fas fa-random" data-toggle="tooltip" data-placement="top" 
-              title="Randomize parameters"></i> </button>
+              title="随机参数"></i> </button>
 					</div>
 					</div>
 			</div>
@@ -202,14 +201,14 @@
 		<div class="row my-4">
 				<div class="col-md-3 offset-md-3">
 				<select disabled id="model-select-style" class="centered custom-select">
-						<option value="mobilenet" selected="selected">[Fast] Distilled MobileNet style model (9.6MB)</option>
-						<option value="inception">[High quality] Original Inceptionv3 style model (36.3MB)</option>
+						<option value="mobilenet" selected="selected">[较快] Distilled MobileNet 风格模型 (9.6MB)</option>
+						<option value="inception">[高质量] Original Inceptionv3 风格模型 (36.3MB)</option>
 					</select>
 			</div>
 				<div class="col-md-3">
 				<select disabled id="model-select-transformer" class="centered custom-select">
-						<option value="separable" selected="selected">[Fast] Separable_conv2d transformer (2.4MB)</option>
-						<option value="original">[High quality] Original transformer model (7.9MB)</option>
+						<option value="separable" selected="selected">[较快] Separable_conv2d 变换器 (2.4MB)</option>
+						<option value="original">[高质量] Original 变换器模型 (7.9MB)</option>
 					</select>
 			</div>
 			</div>
