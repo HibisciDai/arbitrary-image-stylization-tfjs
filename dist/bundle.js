@@ -479,8 +479,8 @@ var Main = function () {
       this.combineButton.disabled = false;
       this.modelSelectStyle.disabled = false;
       this.modelSelectTransformer.disabled = false;
-      this.styleButton.textContent = 'Stylize';
-      this.combineButton.textContent = 'Combine Styles';
+      this.styleButton.textContent = '·ç¸ñ»¯';
+      this.combineButton.textContent = '½áºÏÑùÊ½';
     }
   }, {
     key: 'disableStylizeButtons',
@@ -504,7 +504,7 @@ var Main = function () {
               return regeneratorRuntime.awrap(tf.nextFrame());
 
             case 2:
-              this.styleButton.textContent = 'Generating 100D style representation';
+              this.styleButton.textContent = 'Éú³É100DÑùÊ½±íÊ¾';
               _context5.next = 5;
               return regeneratorRuntime.awrap(tf.nextFrame());
 
@@ -522,7 +522,7 @@ var Main = function () {
                 break;
               }
 
-              this.styleButton.textContent = 'Generating 100D identity style representation';
+              this.styleButton.textContent = 'Éú³É100D±êÊ¶ÑùÊ½±íÊ¾';
               _context5.next = 12;
               return regeneratorRuntime.awrap(tf.nextFrame());
 
@@ -549,7 +549,7 @@ var Main = function () {
               identityBottleneck.dispose();
 
             case 21:
-              this.styleButton.textContent = 'Stylizing image...';
+              this.styleButton.textContent = '·ç¸ñ»¯Í¼Ïñ...';
               _context5.next = 24;
               return regeneratorRuntime.awrap(tf.nextFrame());
 
@@ -589,7 +589,7 @@ var Main = function () {
               return regeneratorRuntime.awrap(tf.nextFrame());
 
             case 2:
-              this.combineButton.textContent = 'Generating 100D style representation of image 1';
+              this.combineButton.textContent = 'Éú³ÉÍ¼Ïñ1µÄ100DÑùÊ½±íÊ¾';
               _context6.next = 5;
               return regeneratorRuntime.awrap(tf.nextFrame());
 
@@ -603,7 +603,7 @@ var Main = function () {
               bottleneck1 = _context6.sent;
 
 
-              this.combineButton.textContent = 'Generating 100D style representation of image 2';
+              this.combineButton.textContent = 'Éú³ÉÍ¼Ïñ2µÄ100DÑùÊ½±íÊ¾';
               _context6.next = 11;
               return regeneratorRuntime.awrap(tf.nextFrame());
 
@@ -617,7 +617,7 @@ var Main = function () {
               bottleneck2 = _context6.sent;
 
 
-              this.combineButton.textContent = 'Stylizing image...';
+              this.combineButton.textContent = '·ç¸ñ»¯Í¼Ïñ...';
               _context6.next = 17;
               return regeneratorRuntime.awrap(tf.nextFrame());
 
@@ -50482,7 +50482,7 @@ var $export = require('./_export');
 $export($export.S, 'Math', { fround: require('./_math-fround') });
 
 },{"./_export":327,"./_math-fround":355}],461:[function(require,module,exports){
-// 20.2.2.17 Math.hypot([value1[, value2[, â€¦ ]]])
+// 20.2.2.17 Math.hypot([value1[, value2[, â€?]]])
 var $export = require('./_export');
 var abs = Math.abs;
 
