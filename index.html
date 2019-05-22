@@ -29,6 +29,7 @@
 </style>
 
     <body>
+	<input type="hidden" id="basePath" value="<%=basePath%>">
 <input type="file" id="file-select" style="display: none" accept="image/x-png,image/gif,image/jpeg"/>
 <div class="">
 		<ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
@@ -262,7 +263,10 @@
     }
 
     $("#uploadbutton").click(function () {
-		var jsonurl = ${path} + '/file/uploadOnePicture';
+		var jsonurl = document.getElementById("basePath").value + 'file/uploadOnePicture';
+		
+		consol.info(jsonurl);
+		
         var imgsrc = $('#stylized')[0].toDataURL('image/png');
         var blob = dataURItoBlob(imgsrc); // 上一步中的函数
         var fd = new FormData(document.forms[0]);
