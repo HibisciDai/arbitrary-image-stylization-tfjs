@@ -29,7 +29,7 @@
 </style>
 
     <body>
-	<input type="hidden" id="basePath" value="<%=basePath%>">
+<input type="hidden" id="basePath" value="<%=basePath%>">
 <input type="file" id="file-select" style="display: none" accept="image/x-png,image/gif,image/jpeg"/>
 <div class="">
 		<ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
@@ -263,7 +263,7 @@
     }
 
     $("#uploadbutton").click(function () {
-		var jsonurl = document.getElementById("basePath").value + 'file/uploadOnePicture';
+		var jsonurl = window.location.protocol + '//' + window.location.host + ':' + window.location.port + '/Design_and_Research_of_Online_Image_Simple_Processing_System_Based_on_SSM_and_HTML5_war_exploded/file/uploadOnePicture';
 		
 		console.info(jsonurl);
 		
