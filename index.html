@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
     <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-91864013-5"></script>
@@ -10,7 +10,7 @@
 
       gtag('config', 'UA-91864013-5');
     </script>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Font Awesome -->
@@ -262,13 +262,14 @@
     }
 
     $("#uploadbutton").click(function () {
+		var jsonurl = ${path} + '/file/uploadOnePicture';
         var imgsrc = $('#stylized')[0].toDataURL('image/png');
         var blob = dataURItoBlob(imgsrc); // 上一步中的函数
         var fd = new FormData(document.forms[0]);
         fd.append("the_file", blob, 'image.png');
 
         $.ajax({
-            url: "../file/uploadOnePicture",
+            url: jsonurl,
             type: "post",
             data: fd,
             contentType: false,
