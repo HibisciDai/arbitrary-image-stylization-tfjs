@@ -28,10 +28,10 @@
 }
 </style>
 
-<body>
-	<input type="file" id="file-select" style="display: none" accept="image/x-png,image/gif,image/jpeg"/>
+    <body>
+<input type="file" id="file-select" style="display: none" accept="image/x-png,image/gif,image/jpeg"/>
 <div class="">
-	<ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
+		<ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
 		<li class="nav-item"> <a class="nav-link active" id="stylize-tab" data-toggle="tab" href="#stylize" role="tab" aria-controls="stylize" aria-selected="true">一种风格化图像</a> </li>
 		<li class="nav-item"> <a class="nav-link" id="combine-tab" data-toggle="tab" href="#combine" role="tab" aria-controls="combine" aria-selected="false">两种风格化图像</a> </li>
 	</ul>
@@ -76,8 +76,8 @@
 								<option value="clouds">云</option>
 								<option value="towers">塔</option>
 								<option value="sketch">草图</option>
-								<option value="seaport">海港</option>
-								<option value="red_circles" selected="selected">梵高星空</option>
+								<option value="seaport" selected="selected">海港</option>
+								<option value="red_circles">梵高星空</option>
 								<option value="zigzag">曲线</option>
 							</select>
 					</div>
@@ -95,7 +95,7 @@
 				<div class="row my-4">
 						<div class="col-md-5 offset-md-3">
 						<button disabled id="style-button" type="button" class="btn btn-primary btn-block">正在加载模型，请保证网络畅通，稍后..</button>
-						<button id="uploadbutton" type="button" class="btn btn-primary btn-block">上传图片</button>
+						<button id="uploadbutton" type="button" style="color: #fff;background-color: #007bff;border-color: #007bff;font-weight: 400;text-align: center;vertical-align: middle;padding: .375rem .75rem;font-size: 1rem;line-height: 1.5;border-radius: .25rem;text-transform: none;margin: 0;width: 100%;display: block;">上传图片</button>
 					</div>
 						<div class="col-md-1">
 						<button type="button" id="randomize" class="btn btn-light btn-block"> <i class="fas fa-random" data-toggle="tooltip" data-placement="top" 
@@ -120,8 +120,8 @@
 								<option value="" disabled>选择一个风格</option>
 								<option value="file">从文件中选择</option>
 								<option value="random">随机生成</option>
-								<option value="udnie" selected="selected">抽象</option>
-								<option value="stripes">线条1</option>
+								<option value="udnie">抽象</option>
+								<option value="stripes" selected="selected">线条1</option>
 								<option value="bricks">砖块</option>
 								<option value="clouds">云</option>
 								<option value="towers">塔</option>
@@ -146,9 +146,9 @@
 								<option value="random">随机生成</option>
 								<option value="udnie">抽象</option>
 								<option value="stripes">线条1</option>
-								<option value="bricks">砖块</option>
+								<option value="bricks" selected="selected">砖块</option>
 								<option value="clouds">云</option>
-								<option value="towers" selected="selected">塔</option>
+								<option value="towers">塔</option>
 								<option value="sketch">草图</option>
 								<option value="seaport">海港</option>
 								<option value="red_circles">梵高星空</option>
