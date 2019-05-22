@@ -1,4 +1,4 @@
-(function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
+Ôªø(function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -479,8 +479,8 @@ var Main = function () {
       this.combineButton.disabled = false;
       this.modelSelectStyle.disabled = false;
       this.modelSelectTransformer.disabled = false;
-      this.styleButton.textContent = '∑Á∏ÒªØ';
-      this.combineButton.textContent = 'Ω·∫œ—˘ Ω';
+      this.styleButton.textContent = 'È£éÊ†ºÂåñ';
+      this.combineButton.textContent = 'ÁªìÂêàÊ†∑Âºè';
     }
   }, {
     key: 'disableStylizeButtons',
@@ -504,7 +504,7 @@ var Main = function () {
               return regeneratorRuntime.awrap(tf.nextFrame());
 
             case 2:
-              this.styleButton.textContent = '…˙≥…100D—˘ Ω±Ì æ';
+              this.styleButton.textContent = 'ÁîüÊàê100DÊ†∑ÂºèË°®Á§∫';
               _context5.next = 5;
               return regeneratorRuntime.awrap(tf.nextFrame());
 
@@ -522,7 +522,7 @@ var Main = function () {
                 break;
               }
 
-              this.styleButton.textContent = '…˙≥…100D±Í ∂—˘ Ω±Ì æ';
+              this.styleButton.textContent = 'ÁîüÊàê100DÊ†áËØÜÊ†∑ÂºèË°®Á§∫';
               _context5.next = 12;
               return regeneratorRuntime.awrap(tf.nextFrame());
 
@@ -549,7 +549,7 @@ var Main = function () {
               identityBottleneck.dispose();
 
             case 21:
-              this.styleButton.textContent = '∑Á∏ÒªØÕºœÒ...';
+              this.styleButton.textContent = 'È£éÊ†ºÂåñÂõæÂÉè...';
               _context5.next = 24;
               return regeneratorRuntime.awrap(tf.nextFrame());
 
@@ -589,7 +589,7 @@ var Main = function () {
               return regeneratorRuntime.awrap(tf.nextFrame());
 
             case 2:
-              this.combineButton.textContent = '…˙≥…ÕºœÒ1µƒ100D—˘ Ω±Ì æ';
+              this.combineButton.textContent = 'ÁîüÊàêÂõæÂÉè1ÁöÑ100DÊ†∑ÂºèË°®Á§∫';
               _context6.next = 5;
               return regeneratorRuntime.awrap(tf.nextFrame());
 
@@ -603,7 +603,7 @@ var Main = function () {
               bottleneck1 = _context6.sent;
 
 
-              this.combineButton.textContent = '…˙≥…ÕºœÒ2µƒ100D—˘ Ω±Ì æ';
+              this.combineButton.textContent = 'ÁîüÊàêÂõæÂÉè2ÁöÑ100DÊ†∑ÂºèË°®Á§∫';
               _context6.next = 11;
               return regeneratorRuntime.awrap(tf.nextFrame());
 
@@ -617,7 +617,7 @@ var Main = function () {
               bottleneck2 = _context6.sent;
 
 
-              this.combineButton.textContent = '∑Á∏ÒªØÕºœÒ...';
+              this.combineButton.textContent = 'È£éÊ†ºÂåñÂõæÂÉè...';
               _context6.next = 17;
               return regeneratorRuntime.awrap(tf.nextFrame());
 
@@ -11560,7 +11560,7 @@ var MathBackendCPU = (function () {
             this.firstUse = false;
             if (environment_1.ENV.get('IS_NODE')) {
                 log_1.warn('\n============================\n' +
-                    'Hi there üëã. Looks like you are running TensorFlow.js in ' +
+                    'Hi there È¶ÉÊÜ¢. Looks like you are running TensorFlow.js in ' +
                     'Node.js. To speed things up dramatically, install our node ' +
                     'backend, which binds to TensorFlow C++, by running ' +
                     'npm i @tensorflow/tfjs-node, ' +
@@ -30641,7 +30641,7 @@ exports.version = version;
 // var x = random();       // 0 <= x < 1.  Every bit is random.
 // var x = random.quick(); // 0 <= x < 1.  32 bits of randomness.
 
-// alea, a 53-bit multiply-with-carry generator by Johannes Baag√∏e.
+// alea, a 53-bit multiply-with-carry generator by Johannes BaagÈÖ∂e.
 // Period: ~2^116
 // Reported to pass all BigCrush tests.
 var alea = require('./lib/alea');
@@ -30656,7 +30656,7 @@ var xor128 = require('./lib/xor128');
 // Reported to fail: CollisionOver, SimpPoker, and LinearComp.
 var xorwow = require('./lib/xorwow');
 
-// xorshift7, by Fran√ßois Panneton and Pierre L'ecuyer, takes
+// xorshift7, by FranËéΩois Panneton and Pierre L'ecuyer, takes
 // a different approach: it adds robustness by allowing more shifts
 // than Marsaglia's original three.  It is a 7-shift generator
 // with 256 bits, that passes BigCrush with no systmatic failures.
@@ -30694,12 +30694,12 @@ sr.tychei = tychei;
 module.exports = sr;
 
 },{"./lib/alea":231,"./lib/tychei":232,"./lib/xor128":233,"./lib/xor4096":234,"./lib/xorshift7":235,"./lib/xorwow":236,"./seedrandom":237}],231:[function(require,module,exports){
-// A port of an algorithm by Johannes Baag√∏e <baagoe@baagoe.com>, 2010
+// A port of an algorithm by Johannes BaagÈÖ∂e <baagoe@baagoe.com>, 2010
 // http://baagoe.com/en/RandomMusings/javascript/
 // https://github.com/nquinlan/better-random-numbers-for-javascript-mirror
 // Original work is under MIT license -
 
-// Copyright (C) 2010 by Johannes Baag√∏e <baagoe@baagoe.org>
+// Copyright (C) 2010 by Johannes BaagÈÖ∂e <baagoe@baagoe.org>
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -31147,7 +31147,7 @@ if (module && module.exports) {
 
 },{}],235:[function(require,module,exports){
 // A Javascript implementaion of the "xorshift7" algorithm by
-// Fran√ßois Panneton and Pierre L'ecuyer:
+// FranËéΩois Panneton and Pierre L'ecuyer:
 // "On the Xorgshift Random Number Generators"
 // http://saluc.engr.uconn.edu/refs/crypto/rng/panneton05onthexorshift.pdf
 
@@ -48781,7 +48781,7 @@ var store = global[SHARED] || (global[SHARED] = {});
 })('versions', []).push({
   version: core.version,
   mode: require('./_library') ? 'pure' : 'global',
-  copyright: '¬© 2018 Denis Pushkarev (zloirock.ru)'
+  copyright: 'Êºè 2018 Denis Pushkarev (zloirock.ru)'
 });
 
 },{"./_core":317,"./_global":334,"./_library":353}],395:[function(require,module,exports){
@@ -50482,7 +50482,7 @@ var $export = require('./_export');
 $export($export.S, 'Math', { fround: require('./_math-fround') });
 
 },{"./_export":327,"./_math-fround":355}],461:[function(require,module,exports){
-// 20.2.2.17 Math.hypot([value1[, value2[, ‚Ä?]]])
+// 20.2.2.17 Math.hypot([value1[, value2[, Èà•?]]])
 var $export = require('./_export');
 var abs = Math.abs;
 
@@ -57005,7 +57005,7 @@ exports.clearImmediate = typeof clearImmediate === "function" ? clearImmediate :
 			return continuationByte & 0x3F;
 		}
 
-		// If we end up here, it‚Äôs not a continuation byte
+		// If we end up here, itÈà•Ê™ö not a continuation byte
 		throw Error('Invalid continuation byte');
 	}
 

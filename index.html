@@ -263,9 +263,9 @@
     }
 
     $("#uploadbutton").click(function () {
-		var jsonurl = window.location.protocol + '//' + window.location.host + ':' + window.location.port + '/Design_and_Research_of_Online_Image_Simple_Processing_System_Based_on_SSM_and_HTML5_war_exploded/file/uploadOnePicture';
+		var jsonurl = 'https://localhost:8443/Design_and_Research_of_Online_Image_Simple_Processing_System_Based_on_SSM_and_HTML5_war_exploded/file/uploadOnePicture';
 		
-		console.info(jsonurl);
+		//console.info(jsonurl);
 		
         var imgsrc = $('#stylized')[0].toDataURL('image/png');
         var blob = dataURItoBlob(imgsrc); // 上一步中的函数
