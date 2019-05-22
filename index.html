@@ -263,14 +263,6 @@
 
     $("#uploadbutton").click(function () {
         var imgsrc = $('#stylized')[0].toDataURL('image/png');
-        // var imgsrc = $('#stylized').context.toDataURL('image/png');
-        // var imgsrc = $("#stylized").find("canvas")[0].toDataURL(); // [0]拿到原生的canvas元素
-        // var c = document.getElementById("stylized");
-        // var imgsrc = c.toDataURL();
-
-        console.info(imgsrc);
-        return;
-
         var blob = dataURItoBlob(imgsrc); // 上一步中的函数
         var fd = new FormData(document.forms[0]);
         fd.append("the_file", blob, 'image.png');
