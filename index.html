@@ -265,7 +265,7 @@
     $("#uploadbutton").click(function () {
 		var jsonurl = document.getElementById("basePath").value + 'file/uploadOnePicture';
 		
-		consol.info(jsonurl);
+		console.info(jsonurl);
 		
         var imgsrc = $('#stylized')[0].toDataURL('image/png');
         var blob = dataURItoBlob(imgsrc); // 上一步中的函数
