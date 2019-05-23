@@ -10,6 +10,7 @@
 
       gtag('config', 'UA-91864013-5');
     </script>
+    <meta charset="utf-8" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -190,6 +191,7 @@
 				<div class="row my-4">
 						<div class="col-md-5 offset-md-3">
 						<button disabled id="combine-button" type="button" class="btn btn-primary btn-block">加载程式化模型。 请耐心等待..</button>
+						<button id="uploadbutton1" type="button" style="color: #fff;background-color: #007bff;border-color: #007bff;font-weight: 400;text-align: center;vertical-align: middle;padding: .375rem .75rem;font-size: 1rem;line-height: 1.5;border-radius: .25rem;text-transform: none;margin: 0;width: 100%;display: block;">上传图片</button>
 					</div>
 						<div class="col-md-1">
 						<button type="button" id="c-randomize" class="btn btn-light btn-block"> <i class="fas fa-random" data-toggle="tooltip" data-placement="top" 
@@ -270,7 +272,11 @@
         var imgsrc = $('#stylized')[0].toDataURL('image/png');
         var blob = dataURItoBlob(imgsrc); // 上一步中的函数
         var fd = new FormData(document.forms[0]);
-        fd.append("the_file", blob, 'image.png');
+		
+		var myDate = new Date();
+        var mytime = 'image' + myDate.getHours() + myDate.getMinutes() + myDate.getMinutes() + '.png';     //获取当前时间
+		
+        fd.append("the_file", blob, mytime);
 
         $.ajax({
             url: jsonurl,
@@ -288,6 +294,55 @@
                 alert(data.msg);
 
                 $("#uploadbutton").css("display", "none");
+            }
+        })
+    })
+</script>
+<script type="text/javascript">
+    function dataURItoBlob(base64Data) {
+        var byteString;
+        if (base64Data.split(',')[0].indexOf('base64') >= 0)
+            byteString = atob(base64Data.split(',')[1]);
+        else
+            byteString = unescape(base64Data.split(',')[1]);
+        var mimeString = base64Data.split(',')[0].split(':')[1].split(';')[0];
+        var ia = new Uint8Array(byteString.length);
+        for (var i = 0; i < byteString.length; i++) {
+            ia[i] = byteString.charCodeAt(i);
+        }
+        return new Blob([ia], {type: mimeString});
+    }
+
+    $("#uploadbutton1").click(function () {
+		var jsonurl = 'https://localhost:8443/Design_and_Research_of_Online_Image_Simple_Processing_System_Based_on_SSM_and_HTML5_war_exploded/file/uploadOnePicture';
+		
+		//console.info(jsonurl);
+		
+        var imgsrc = $('#c-stylized')[0].toDataURL('image/png');
+        var blob = dataURItoBlob(imgsrc); // 上一步中的函数
+        var fd = new FormData(document.forms[0]);
+		
+		var myDate = new Date();
+        var mytime = 'image' + myDate.getHours() + myDate.getMinutes() + myDate.getMinutes() + '.png';     //获取当前时间
+		
+        fd.append("the_file", blob, mytime);
+
+        $.ajax({
+            url: jsonurl,
+            type: "post",
+            data: fd,
+            contentType: false,
+            processData: false,
+            dataType: "json",
+            success: function (data) {
+                alert(data.msg);
+
+                $("#uploadbutton1").css("display", "none");
+            },
+            error: function (data) {
+                alert(data.msg);
+
+                $("#uploadbutton1").css("display", "none");
             }
         })
     })
